@@ -1,0 +1,123 @@
+.partners {
+	text-align: center;
+	padding-bottom: 55px
+}
+
+.partners h5 {
+	padding: 40px 0px 40px 0px;
+	color: #3e3e3e;
+	font-size: 45px
+}
+
+.partners .slider {
+	position: relative
+}
+
+.partners .slider .button-next,
+.partners .slider .button-prev {
+	position: absolute
+}
+
+.partners .slider .button-prev {
+	left: 10%;
+	top: calc(50% - 50px)
+}
+
+.partners .slider .button-next {
+	right: 10%;
+	top: calc(50% - 50px)
+}
+
+.partners .slider .show div {
+	display: inline-flex;
+	flex-direction: column;
+	margin-right: 24px
+}
+
+.partners .slider .show div:last-child {
+	margin-right: 0px
+}
+
+.partners .slider .show div img {
+	width: 255px;
+	height: 255px
+}
+
+.partners .slider .show div span {
+	margin-top: 25px;
+	font-size: 25px
+}
+
+.partners .slider .show div .active-slide {
+	color: #ba271f
+}
+
+@media screen and (max-width:1525px) {
+	.partners .slider .button-prev {
+		left: 5%
+	}
+	.partners .slider .button-next {
+		right: 5%
+	}
+}
+
+@media screen and (max-width:1370px) {
+	.partners .slider .button-prev {
+		left: 20px
+	}
+	.partners .slider .button-next {
+		right: 20px
+	}
+}
+
+@media screen and (max-width:1250px) {
+	.partners .slider .show {
+		display: flex;
+		justify-content: center
+	}
+	.partners .slider .show div:nth-child(3) {
+		margin-right: 0px
+	}
+	.partners .slider .show div:last-of-type {
+		display: none
+	}
+}
+
+@media screen and (max-width:950px) {
+
+	.partners .slider .show {
+		display: flex;
+		justify-content: center
+	}
+	.partners .slider .show div:nth-child(2) {
+		margin-right: 0px
+	}
+	.partners .slider .show div:nth-child(3) {
+		display: none
+	}
+}
+
+@media screen and (max-width:700px) {
+
+	.partners .slider .show {
+		display: flex;
+		justify-content: center
+	}
+	.partners .slider .show div:first-child {
+		margin-right: 0px
+	}
+	.partners .slider .show div:nth-child(2) {
+		display: none
+	}
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+
+	.partners h5 {
+		font-size: 10vw
+	}
+	.partners .slider .show div img {
+		width: 170px;
+		height: 170px
+	}
+}

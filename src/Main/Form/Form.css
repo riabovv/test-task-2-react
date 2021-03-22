@@ -1,0 +1,66 @@
+.page-form {
+	background-color: #b4a184;
+	text-align: center;
+	padding-bottom: 55px
+}
+
+.page-form h5 {
+	padding: 40px 0px 0px 0px;
+	color: white;
+	font-size: 60px
+}
+
+.page-form .title-2 {
+	display: block;
+	font-size: 25px;
+	color: white
+}
+
+.page-form form {
+	width: 540px;
+	display: inline-flex;
+	flex-direction: column;
+	margin-top: 30px
+}
+
+.page-form form input {
+	padding: 20px 30px;
+	font-size: 25px;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 30px
+}
+
+.page-form form input:focus {
+	border: 2px solid #ba271f;
+	padding: 18px 28px
+}
+
+.page-form form input::placeholder {
+	color: #ababab
+}
+
+.page-form form button {
+	align-self: center;
+	background-color: #ba271f;
+	font-size: 25px;
+	font-family: "Lato", sans-serif;
+	color: white;
+	padding: 15px 40px;
+	transition: 0.5s
+}
+
+.page-form form button:hover {
+	background-color: white;
+	color: #ba271f;
+	transition: 0.5s
+}
+
+@media screen and (max-width:600px) {
+	.page-form h5 {
+		padding: 40px 15px 0px 15px;
+		font-size: 10vw
+	}
+	.page-form form {
+		width: 100%
+	}
+}

@@ -1,0 +1,101 @@
+.certificate {
+	width: 100%;
+	background-color: #a99473;
+	display: flex
+}
+
+.certificate .left,
+.certificate .right {
+	width: 50%;
+	color: white
+}
+
+.certificate .right {
+	padding: 40px 15px 90px 100px
+}
+
+.certificate .right span {
+	font-size: 35px;
+	font-weight: 300;
+	margin-left: 10px
+}
+
+.certificate .right p {
+	padding: 40px 0px 50px 0px;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	line-height: 1.835;
+	max-width: 380px
+}
+
+.certificate .right button {
+	background-color: #ba271f;
+	color: #ffffff;
+	outline: 1px solid #ffffff;
+	transition: 0.5s;
+	font-size: 21.87px;
+	padding: 15px 65px
+}
+
+.certificate .right button:hover {
+	background-color: #ffffff;
+	color: #ba271f;
+	outline: 1px solid #ba271f;
+	transition: 0.5s
+}
+
+.certificate .educationBg {
+	background-image: url(education.webp);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover
+}
+
+
+@media screen and (max-width:1525px) {
+	.certificate .right p {
+		padding: 30px 0px 40px 0px
+	}
+}
+
+@media screen and (max-width:1250px) {
+
+	.certificate .right {
+		padding: 40px 15px 50px 50px
+	}
+}
+
+@media screen and (max-width:1100px) {
+	.certificate {
+		flex-direction: column
+	}
+	.certificate .left,
+	.certificate .right {
+		width: 100%
+	}
+	.certificate .educationBg {
+		height: 542px
+	}
+}
+
+@media screen and (max-width:600px) {
+
+	.certificate .right p {
+		max-width: 100%
+	}
+}
+
+@media screen and (min-width:320px) and (max-width:600px) {
+
+	.certificate .right {
+		padding: 40px 15px 50px 15px;
+		text-align: center
+	}
+	.certificate .right span {
+		margin-left: 0px
+	}
+	.certificate .educationBg {
+		height: 220px
+	}
+
+}
